@@ -209,7 +209,7 @@ p {
 /*--- End Hero Section */
 
 
-/* Projects section */
+/*---------------------------------------------------------------- Projects section------ */
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px; 
@@ -260,11 +260,8 @@ p {
 #projects .project-info .btn{
 	
 	background-color:  #cca524;
-	margin-top: 30px;
-	 
+	margin-top: 30px;	 
 }
-
-
 #projects .project-img {
 	flex-basis: 40%;
 	height: 300px;
@@ -285,53 +282,85 @@ p {
 #projects .project-item:hover .project-img img {
 	transform: scale(1.5);
 }
-/* End Projects section */
+/*------------------------- End Projects section-------------- */
 
-
-/* contact Section */
-#contact .contact {
-	flex-direction: column;
-	max-width: 1200px;
-	margin: 0 auto;
-	width: 90%;
-}
-#contact .contact-items {
-	/* max-width: 400px; */
+/*-----------------Download apps------------------*/
+#download .download-apps ul{
 	width: 100%;
-}
-#contact .contact-item {
-	width: 80%;
-	padding: 20px;
 	text-align: center;
-	border-radius: 10px;
-	padding: 30px;
-	margin: 30px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
+	margin: 0;
+	padding: 0;
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+#download .download-apps li{
+	display: inline-block;
+	margin: 50px;
 }
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+.download-apple{
+	width: 180px;
+	height: 75px;
+	background: #000;
+	float: left;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #fff;
+	position: relative;
+	border-radius: 20px;
 }
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
+.download .fa{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%, -50%);
 }
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
+.p1, .p2{
+	position: absolute;
 }
-/*End contact Section */
+.p1{
+	top: 35px;
+	font-size: 10px;
+	left: 50px;
+
+}
+.p2{
+	top: 50px;
+	font-size: 15px;
+	left: 47px;
+}
+.download-google-play{
+	width: 180px;
+	height: 75px;
+	background: #000;
+	float: left;
+	border-radius: 4px;
+	color: #fff;
+	cursor: pointer;
+	border: 1px solid #fff;
+	position: relative;
+	border-radius: 20px;
+}
+.download .download-google-play i{
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 15%;
+	transform: translate(-50%, -50%);
+}
+.download-apps:hover{
+	filter: invert(100%);
+}
+/*--------------------------------contacts--------------------*/
+
+
+
+
+
+
+
+
+
+
 
 
 /* Keyframes */
@@ -444,3 +473,6 @@ p {
 	/* End header */
 
 /* End  Media Query For Desktop */
+
+
+
