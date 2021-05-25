@@ -288,10 +288,6 @@ p {
 /* End Projects section */
 
 
-
-
-
-
 /* contact Section */
 #contact .contact {
 	flex-direction: column;
@@ -349,23 +345,7 @@ p {
 		transform: scale(1.4);
 	}
 }
-@keyframes text_reveal_box {
-	50% {
-		width: 100%;
-		left: 0;
-	}
-	100% {
-		width: 0;
-		left: 100%;
-	}
-}
-@keyframes text_reveal {
-	100% {
-		color: white;
-	}
-}
-
-/* End Keyframes */
+/*--------------------------------- End Keyframes */
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -380,12 +360,6 @@ p {
 	}
 	/* End Hero */
 
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End Services Section */
 
 	/* Project */
 	#projects .project-item {
@@ -408,31 +382,7 @@ p {
 	}
 	/* End Project */
 
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		padding-left: 60px;
-	}
-	#about .about .col-left .about-img::after {
-		left: -45px;
-		top: 34px;
-		height: 98%;
-		width: 98%;
-		border: 10px solid crimson;
-	}
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End About */
-
+	
 	/* contact  */
 	#contact .contact {
 		flex-direction: column;
@@ -493,9 +443,4 @@ p {
 	}
 	/* End header */
 
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
-}
 /* End  Media Query For Desktop */
