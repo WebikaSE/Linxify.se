@@ -210,6 +210,11 @@ p {
 
 
 /*---------------------------------------------------------------- Projects section------ */
+#projects{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+
 #projects .projects {
 	flex-direction: column;
 	max-width: 1200px; 
@@ -353,15 +358,20 @@ p {
 }
 
 .download-google-play:hover {
-	filter: invert(100%);
+	background-color: #cca524;
 }
 .download-apple:hover {
-	filter: invert(100%);
+	background-color: #cca524;
 }
 
 /*--------------------------------contacts--------------------*/
 
 /* contact Section */
+#contact{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+
+
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -420,6 +430,7 @@ p {
 	margin-top: 20px;
 	display: flex;
 	margin-bottom: 30px;
+	transition: all 0.5s;
 }
 #footer .social-item {
 	height: 50px;
@@ -432,6 +443,8 @@ p {
 }
 #footer .social-item:hover img {
 	filter: grayscale(0);
+	transform: rotate(360deg)scale(1.3);
+
 }
 #footer p {
 	color: white;
@@ -493,7 +506,7 @@ p {
 	#contact .contact {
 		min-height: 8vh;
 		flex-direction: column;
-		padding: 100px 0;
+		padding: 70px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
