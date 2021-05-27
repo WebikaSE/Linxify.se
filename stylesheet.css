@@ -452,7 +452,7 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
-/* End Footer */
+/* -------------------------------------End Footer--------------- */
 
 
 /* Keyframes */
@@ -466,20 +466,21 @@ p {
 		transform: scale(1.4);
 	}
 }
-/*--------------------------------- End Keyframes */
+/* End Keyframes */
 
 
-/*------------------------------End styling index.html--------------------*/
+/*-----------------------------------------End styling index.html--------------------*/
+
+
+/*styles for vår app*/
+
 #projects .project-info ul li{
 	font-size: 16px;
 	line-height: 1.8;
-
 }
-/*-------------------projects-vår-app------------------*/
-
-/*---------------------------------------------om oss--section---------------------------*/
 
 
+/*styling for om oss*/
 #about .about {
 	flex-direction: column-reverse;
 	text-align: center;
@@ -509,25 +510,20 @@ p {
 	width: 100%;
 	position: relative;
 }
-
-/*------------------------------ End om-oss------------------- */
+/* End om-oss */
 
 
 
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-	.cta {
-		font-size: 2.5rem;
-		padding: 20px 60px;
-	}
+	
 	h1.section-title {
 		font-size: 6rem;
 	}
 
-	/* Hero */
-	#hero h1 {
-		font-size: 7rem;
+	#hero h2 {
+		font-size: 4rem;
 	}
 	/* End Hero */
 
@@ -712,3 +708,31 @@ p {
 .team-text{
 	margin-top: 20px;
 }	
+/*-------------------------------------------end of om-oss--------------*/
+
+/* Hero Section */
+#hero-page {
+	background-image: url(./images/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#hero-page .hero-page {
+	height: 50vh;
+    max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	align-items: center;
+    display: flex;
+}
+#hero-page h2 {
+	width: fit-content;
+	font-size: 4rem;
+	color: white;
+	position: relative;
+	}
+#hero-page span{
+	font-size: 3rem;
+	color: white;
+}
+
