@@ -468,9 +468,59 @@ p {
 }
 /*--------------------------------- End Keyframes */
 
+
+/*------------------------------End styling index.html--------------------*/
+#projects .project-info ul li{
+	font-size: 16px;
+	line-height: 1.8;
+
+}
+/*-------------------projects-vår-app------------------*/
+
+/*---------------------------------------------om oss--section---------------------------*/
+
+
+#about .about {
+	flex-direction: column-reverse;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 100px 20px;
+}
+#about .col-left {
+	width: 100%;
+	height: 100%;
+}
+#about .col-right {
+	width: 100%;
+}
+#about .col-right h2 {
+	font-size: 1.8rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	margin-bottom: 10px;
+}
+#about .col-right p {
+	margin-bottom: 20px;
+}
+
+#about .col-left .about-img {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+/*------------------------------ End om-oss------------------- */
+
+
+
+
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
-	
+	.cta {
+		font-size: 2.5rem;
+		padding: 20px 60px;
+	}
 	h1.section-title {
 		font-size: 6rem;
 	}
@@ -481,6 +531,12 @@ p {
 	}
 	/* End Hero */
 
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
 
 	/* Project */
 	#projects .project-item {
@@ -503,12 +559,29 @@ p {
 	}
 	/* End Project */
 
+	/* About */
+	#about .about {
+		flex-direction: row;
+	}
+	#about .col-left {
+		width: 600px;
+		height: 400px;
+		
+	}
 	
+	#about .col-right {
+		text-align: left;
+		padding: 30px;
+	}
+	#about .col-right h1 {
+		text-align: left;
+	}
+	/* End About */
+
 	/* contact  */
 	#contact .contact {
-		min-height: 8vh;
 		flex-direction: column;
-		padding: 70px 0;
+		padding: 100px 0;
 		align-items: center;
 		justify-content: center;
 		min-width: 20vh;
@@ -537,9 +610,11 @@ p {
 		text-align: left;
 		padding-left: 20px;
 	}
+	.team-container {
+		display: column;
 	/* End contact  */
 }
-/* End Media Query For Tablet */
+/* ----------End Media Query For Tablet */
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
@@ -565,15 +640,75 @@ p {
 	}
 	/* End header */
 
-/*---------------------------- End  Media Query For Desktop --------------------*/
-
-
-
-
-/*------------------------------End styling index.html--------------------*/
-#projects .project-info ul li{
-	font-size: 16px;
-	line-height: 1.8;
-
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
 }
-/*-------------------projects-vår-app------------------*/
+/* End  Media Query For Desktop */
+
+.team-container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+}
+.single-team {
+	max-width: 300px;
+	width: 100%;
+	text-align: center;
+	position: relative;
+	margin: 0px 50px 30px 0;
+}
+.single-team:before{
+	position: absolute;
+	content: "";
+	width: 95px;
+	height: 100px;
+	top: -20px;
+	left: -20px;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	z-index: -1;
+}
+.single-team:after{
+	position: absolute;
+	content: "";
+	width: 95px;
+	height: 100px;
+	bottom: -20px;
+	right: -20px;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	z-index: -1;
+}
+
+.single-team img {
+	width: 100%;
+	display: block;
+}
+
+/*---------------end of teams-----------------*/
+
+
+.outer-div
+{
+  padding: 10px;
+}
+.inner-div{
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	margin: 0 auto;
+	border: 1px solid gray;
+	width: 1200px;
+  	border-radius: 8px;
+  	padding: 12px;
+}
+.inner-div p, li{	
+	font-weight: 500;
+	text-align: left;
+	list-style-type: none;
+	color: white;
+	font-size: 16px;
+}
+
+.team-text{
+	margin-top: 20px;
+}	
