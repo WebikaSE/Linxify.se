@@ -615,10 +615,10 @@ p {
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
 	/* header */
-	#header .hamburger {
+	#header .hamburger { 			/*remove it on desktop*/
 		display: none;
 	}
-	#header .nav-list ul {
+	#header .nav-list ul {			
 		position: initial;
 		display: block;
 		height: auto;
@@ -642,6 +642,25 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .team-container {
 	display: flex;
@@ -714,12 +733,12 @@ p {
 #hero-page {
 	background-image: url(./images/bg.jpg);
 	background-size: cover;
-	background-position: top center;
+	background-position: center;
 }
 
 #hero-page .hero-page {
 	height: 50vh;
-    max-width: 1200px;
+    width: 100vh;
 	margin: 0 auto;
 	padding: 0 50px;
 	align-items: center;
@@ -735,4 +754,6 @@ p {
 	font-size: 3rem;
 	color: white;
 }
+
+/*------------------end köpskydd-----------------*/
 
