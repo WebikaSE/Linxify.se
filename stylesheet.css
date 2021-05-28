@@ -7,7 +7,7 @@
 html {
 	font-size: 10px;
 	font-family: 'Montserrat', sans-serif;
-	scroll-behavior: smooth;
+	scroll-behavior: smooth; 
 }
 a {
 	text-decoration: none;
@@ -48,6 +48,7 @@ p {
     font-size: 1.6rem;
     cursor: pointer;
 }
+
 /*--global classes ends--*/
 
 
@@ -179,6 +180,21 @@ p {
 #header .hamburger.active .bar::after {
 	top: 0;
 }
+
+/* Keyframes */
+@keyframes hamburger_puls {
+	0% {
+		opacity: 1;
+		transform: scale(1);
+	}
+	100% {
+		opacity: 0;
+		transform: scale(1.4);
+	}
+}
+/* End Keyframes */
+
+
 /*-------------------------------------------------------------------- End Header section */
 
 /* Hero Section */
@@ -211,28 +227,28 @@ p {
 /*--- End Hero Section */
 
 
-/*---------------------------------------------------------------- Projects section------ */
-#projects{
+/*-------------------------------------------main content------------------ */
+#main{
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 
-#projects .projects {
+#main .main {
 	flex-direction: column;
 	max-width: 1200px; 
 	margin: 0 auto;
 	padding: 10px 10px;
 }
-#projects .projects-header h1 {
+#main .main-header h1 {
 	margin-bottom: 50px;
 }
-#projects .all-projects {
+#main .all-main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
 }
-#projects .project-item {
+#main .main-item {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -242,7 +258,7 @@ p {
 	overflow: hidden;
 	border-radius: 10px;
 }
-#projects .project-info {
+#main .main-info {
 	padding: 30px;
 	flex-basis: 60%;
 	height: 100%;
@@ -253,29 +269,29 @@ p {
 	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
-#projects .project-info h1 {
+#main .main-info h1 {
 	font-size: 4rem;
 	font-weight: 500;
 	margin-bottom: 16px;
 }
 
-#projects .project-info p {
+#main .main-info p {
 	color: white;
 	font-size: 16px;
 	text-align: justify;
 }
-#projects .project-info .btn{
+#main .main-info .btn{
 	
 	background-color:  #cca524;
 	margin-top: 30px;	 
 }
-#projects .project-img {
+#main .main-img {
 	flex-basis: 40%;
 	height: 300px;
 	overflow: hidden;
 	position: relative;
 }
-#projects .project-img:after {
+#main .main-img:after {
 	content: '';
 	position: absolute;
 	left: 0;
@@ -283,13 +299,13 @@ p {
 	height: 100%;
 	width: 100%;
 }
-#projects .project-img img {
+#main .main-img img {
 	transition: 0.5s ease transform;
 }
-#projects .project-item:hover .project-img img {
+#main .main-item:hover .main-img img {
 	transform: scale(1.5);
 }
-/*------------------------- End Projects section-------------- */
+/*------------------------- End main section-------------- */
 
 /*-----------------Download apps------------------*/
 #download{
@@ -366,9 +382,9 @@ p {
 	background-color: #cca524;
 }
 
-/*--------------------------------contacts--------------------*/
+/*--------------------------------contact--------------------*/
 
-/* contact Section */
+
 #contact{
 	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
@@ -415,7 +431,7 @@ p {
 	line-height: 2rem;
 	font-weight: 500;
 }
-/*End contact Section */
+
 
 /* Footer */
 #footer {
@@ -452,32 +468,175 @@ p {
 	color: white;
 	font-size: 1.3rem;
 }
+#footer h1{
+    color: cadetblue;
+    font-size: 2rem;
+}
 /* -------------------------------------End Footer--------------- */
 
-
-/* Keyframes */
-@keyframes hamburger_puls {
-	0% {
-		opacity: 1;
-		transform: scale(1);
-	}
-	100% {
-		opacity: 0;
-		transform: scale(1.4);
-	}
-}
-/* End Keyframes */
+/*-------------------------------------------End styling index.html--------------------*/
 
 
-/*-----------------------------------------End styling index.html--------------------*/
+
+
 
 
 /*styles for vår app*/
 
-#projects .project-info ul li{
-	font-size: 16px;
-	line-height: 1.8;
+/* Hero Section */
+#hero-ourapp {
+	background-image: url(./images/menupic.jpg);
+	background-size: cover;
+	background-position: top center;
 }
+#hero-ourapp .hero-ourapp {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero-ourapp h2 {
+	display: block;
+	width: fit-content;
+	font-size: 3rem;
+	position: relative;
+	color: white;
+	line-height: 2;
+}
+#hero-ourapp span{
+	font-size: 4rem;
+	color: black;
+}
+#ourapp{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+#ourapp .ourapp {
+	flex-direction: column;
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#ourapp .ourapp-header h1 {
+	margin-bottom: 50px;
+}
+#ourapp .all-ourapp {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#ourapp .ourapp-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#ourapp .ourapp-info {
+	padding: 30px;
+	flex-basis: 60%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#ourapp .ourapp-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+#ourapp .ourapp-info p {
+	color: white;
+	font-size: 16px;
+	text-align: justify;
+}
+#ourapp .ourapp-img {
+	flex-basis: 40%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#ourapp .ourapp-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+#ourapp .ourapp-img img {
+	transition: 0.5s ease transform;
+}
+#ourapp .ourapp-item:hover .ourapp-img img {
+	transform: scale(1.5);
+}
+#ourapp .ourapp-info h1{
+    font-size: 35px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}   
+#ourapp .ourapp-info li{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+}
+#ourapp .ourapp-info span{
+    color: #d69b6a;
+    font-weight: bold;
+}
+#ourapp .ourapp-info h2 {
+	color: white;
+	font-size: 40px;
+	position: relative;	
+}
+#ourapp .ourapp-info h2::before {
+	top: 0;
+	left: 0;
+	width: 0;
+	height: 100%;
+	color: #f18e67;
+	overflow: hidden;
+	position: absolute;
+	content: attr(data-text);
+	border-right: 2px solid #37b9f1;	
+	animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+	0%,
+	10%,
+	100% {
+		width: 0;
+	}
+
+	70%,
+	90% {
+		width: 100%;
+	}
+}
+/*------------------------- End ourapp section-------------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*styling for om oss*/
@@ -514,134 +673,6 @@ p {
 
 
 
-
-/* Media Query For Tablet */
-@media only screen and (min-width: 768px) {
-	
-	h1.section-title {
-		font-size: 6rem;
-	}
-
-	#hero h2 {
-		font-size: 4rem;
-	}
-	/* End Hero */
-
-	/* Services Section */
-	#services .service-bottom .service-item {
-		flex-basis: 45%;
-		margin: 2.5%;
-	}
-	/* End Services Section */
-
-	/* Project */
-	#projects .project-item {
-		flex-direction: row;
-	}
-	#projects .project-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
-
-	/* About */
-	#about .about {
-		flex-direction: row;
-	}
-	#about .col-left {
-		width: 600px;
-		height: 400px;
-		
-	}
-	
-	#about .col-right {
-		text-align: left;
-		padding: 30px;
-	}
-	#about .col-right h1 {
-		text-align: left;
-	}
-	/* End About */
-
-	/* contact  */
-	#contact .contact {
-		flex-direction: column;
-		padding: 100px 0;
-		align-items: center;
-		justify-content: center;
-		min-width: 20vh;
-	}
-	#contact .contact-items {
-		width: 100%;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-evenly;
-		margin: 0;
-	}
-	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
-	}
-	#contact .contact-item .icon {
-		height: 100px;
-		width: 100px;
-	}
-	#contact .contact-item .icon img {
-		object-fit: contain;
-	}
-	#contact .contact-item .contact-info {
-		width: 100%;
-		text-align: left;
-		padding-left: 20px;
-	}
-	.team-container {
-		display: column;
-	/* End contact  */
-}
-/* ----------End Media Query For Tablet */
-
-/* Media Query For Desktop */
-@media only screen and (min-width: 1200px) {
-	/* header */
-	#header .hamburger { 			/*remove it on desktop*/
-		display: none;
-	}
-	#header .nav-list ul {			
-		position: initial;
-		display: block;
-		height: auto;
-		width: fit-content;
-		background-color: transparent;
-	}
-	#header .nav-list ul li {
-		display: inline-block;
-	}
-	#header .nav-list ul li a {
-		font-size: 1.8rem;
-	}
-	#header .nav-list ul a:after {
-		display: none;
-	}
-	/* End header */
-
-	#services .service-bottom .service-item {
-		flex-basis: 22%;
-		margin: 1.5%;
-	}
-}
-/* End  Media Query For Desktop */
 
 
 
@@ -757,3 +788,157 @@ p {
 
 /*------------------end köpskydd-----------------*/
 
+
+
+
+
+
+
+/* Media Query For Tablet */
+@media only screen and (min-width: 768px) {
+	
+	h1.section-title {
+		font-size: 6rem;
+	}
+
+	#hero h2 {
+		font-size: 4rem;
+	}
+	/* End Hero */
+
+	/* Services Section */
+	#services .service-bottom .service-item {
+		flex-basis: 45%;
+		margin: 2.5%;
+	}
+	/* End Services Section */
+
+	/* Project */
+	#main .main-item {
+		flex-direction: row;
+	}
+	#main .main-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#main .main-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#main .all-main .main-info {
+		height: 100%;
+	}
+	#main .all-main .main-img {
+		height: 100%;
+	}
+	/* End Project */
+
+	/* About */
+	#about .about {
+		flex-direction: row;
+	}
+	#about .col-left {
+		width: 600px;
+		height: 400px;
+		
+	}
+	
+	#about .col-right {
+		text-align: left;
+		padding: 30px;
+	}
+	#about .col-right h1 {
+		text-align: left;
+	}
+	/* End About */
+
+	/* contact  */
+	#contact .contact {
+		flex-direction: column;
+		padding: 20px 0;
+		align-items: center;
+		justify-content: center;
+		min-width: 20vh;
+	}
+	#contact .contact-items {
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		margin: 0;
+	}
+	#contact .contact-item {
+		width: 30%;
+		margin: 0;
+		flex-direction: row;
+	}
+	#contact .contact-item .icon {
+		height: 100px;
+		width: 100px;
+	}
+	#contact .contact-item .icon img {
+		object-fit: contain;
+	}
+	#contact .contact-item .contact-info {
+		width: 100%;
+		text-align: left;
+		padding-left: 20px;
+	}
+	.team-container {
+		display: column;
+	/* End contact  */
+}
+/* ----------End Media Query For Tablet */
+
+/* Media Query For Desktop */
+@media only screen and (min-width: 1200px) {
+	/* header */
+	#header .hamburger { 			/*remove it on desktop*/
+		display: none;
+	}
+	#header .nav-list ul {			
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+    
+	#header .nav-list ul a:after {
+		display: none;
+	}
+	/* End header */
+
+	#services .service-bottom .service-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}
+/* End  Media Query For Desktop */
+
+/*media query for ourapp--*/
+#ourapp .ourapp-item {
+		flex-direction: row;
+	}
+	#ourapp .ourapp-item:nth-child(even) {
+		flex-direction: row-reverse;
+	}
+	#ourapp .ourapp-item {
+		height: 400px;
+		margin: 0;
+		width: 100%;
+		border-radius: 0;
+	}
+	#ourapp .all-ourapp .ourapp-info {
+		height: 100%;
+	}
+	#ourapp .all-ourapp .ourapp-img {
+		height: 100%;
+	}
