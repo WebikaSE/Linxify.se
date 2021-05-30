@@ -193,7 +193,44 @@ p {
 	}
 }
 /* End Keyframes */
+/* --------------------------------------------------------dropdown styling-----*/
+.dropdown-btn{
+	display: inline-block;
+	text-align: center;
+	padding: 18px 22px;
+	text-decoration: none;
+}
 
+.dropdown:hover .dropdown-btn{
+	background-color: transparent;
+	
+}
+li .dropdown{
+	display: inline-block;
+}
+
+.dropdown-menu{
+	display: none;
+	position: absolute;
+	background-color: black;
+	min-width: 160px;
+	
+
+}
+.dropdown-menu a{
+	
+	padding: 12px 12px;
+	text-decoration: none;
+	display: block;
+	text-align: left;	
+}
+.dropdown-menu a:hover{
+	background-color: white;
+	color: #cca524;/*--------needs correction----*/
+}
+.dropdown:hover .dropdown-menu{
+	display: block;
+}
 
 /*-------------------------------------------------------------------- End Header section */
 
@@ -621,10 +658,10 @@ p {
 		width: 100%;
 	}
 }
-/*------------------------- End-ourapp-page-------------- */
+/*----------------------------------------------------------- End-ourapp-page- */
 
 
-/*---------------style-about-us-page----------*/
+/*-----style-about-us-page----------*/
 #hero-aboutus {
 	background-image: url(./images/aboutbg.jpg);
 	background-size: cover;
@@ -843,101 +880,247 @@ p {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-media query for main (projects)
-
-
-#main .main-item {
-		flex-direction: row;
-	}
-	#main .main-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#main .main-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#main .all-main .main-info {
-		height: 100%;
-	}
-	#main .all-main .main-img {
-		height: 100%;
-	}
-	/* End Project */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* End Projects section */
-
-
-
-
-/*-------------------------------------------end of om-oss--------------*/
+/*--------------------------------------------styling kvittotjänst page--*/
 
 /* Hero Section */
-#hero-page {
+#hero {
 	background-image: url(./images/bg.jpg);
 	background-size: cover;
-	background-position: center;
+	background-position: top center;
 }
 
-#hero-page .hero-page {
-	height: 50vh;
-    width: 100vh;
+#hero .hero {
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 50px;
-	align-items: center;
-    display: flex;
+	justify-content: flex-start;
 }
-#hero-page h2 {
+#hero h2 {
+	display: block;
 	width: fit-content;
-	font-size: 4rem;
-	color: white;
-	position: relative;
-	}
-#hero-page span{
 	font-size: 3rem;
+	position: relative;
+	color: white;
+	line-height: 2;
+}
+
+/*--main content--- */
+#main{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+#main .main {
+	flex-direction: column;
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+#main .main-header h1 {
+	margin-bottom: 50px;
+}
+#main .all-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#main .main-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#main .main-info {
+	padding: 30px;
+	flex-basis: 60%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#main .main-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+#main .main-info p {
+	color: white;
+	font-size: 16px;
+	text-align: justify;
+}
+#main .main-info .btn{
+	
+	background-color:  #cca524;
+	margin-top: 30px;	 
+}
+#main .main-img {
+	flex-basis: 40%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#main .main-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+#main .main-img img {
+	transition: 0.5s ease transform;
+}
+#main .main-item:hover .main-img img {
+	transform: scale(1.5);
+}
+/*---- End kvitto page-------------- */
+
+/*-------------------------------------------------------buyer and seller page----------*/
+
+
+#hero {
+	background-image: url(./images/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h2 {
+	display: block;
+	width: fit-content;
+	font-size: 3rem;
+	position: relative;
+	color: white;
+	line-height: 2;
+}
+
+#main{
+	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+}
+#main .main {
+	flex-direction: column;
+	max-width: 1200px; 
+	margin: 0 auto;
+	padding: 10px 10px;
+}
+
+#main .main-header-shop{
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	border-radius: 10px;
+	
+}
+#main .main-header-shop h2 {
+	margin: 5rem;
+	font-size: 20px;
 	color: white;
 }
 
-/*------------------end köpskydd-----------------*/
+#main .main-header-shop span {
+	margin: 3rem;
+	font-size:18px;
+	color: #cca524;
+}
+#main .all-main {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+#main .main-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	width: 80%;
+	margin: 20px auto;
+	overflow: hidden;
+	border-radius: 10px;
+}
+#main .main-info {
+	padding: 30px;
+	flex-basis: 60%;
+	height: 100%;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-direction: column;
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	color: white;
+}
+#main .main-info h1 {
+	font-size: 4rem;
+	font-weight: 500;
+	margin-bottom: 16px;
+}
+
+#main .main-info p {
+	color: white;
+	font-size: 16px;
+	text-align: justify;
+}
+#main .main-info .btn{
+	
+	background-color:  #cca524;
+	margin-top: 30px;	 
+}
+#main .main-img {
+	flex-basis: 40%;
+	height: 300px;
+	overflow: hidden;
+	position: relative;
+}
+#main .main-img:after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+}
+#main .main-img img {
+	transition: 0.5s ease transform;
+}
+#main .main-item:hover .main-img img {
+	transform: scale(1.5);
+}
+/*------------------------------------------------end buyer and seller protect------*/
 
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************----MEDIA QUERIES---------*******************/
 
 /* Media Query For Tablet */
 @media only screen and (min-width: 768px) {
@@ -977,6 +1160,10 @@ media query for main (projects)
 	#main .all-main .main-img {
 		height: 100%;
 	}
+
+	
+
+
 	/* End Project */
 
 	/* About */
@@ -1087,7 +1274,9 @@ media query for main (projects)
 		height: 100%;
 	}
 
-/*-------------------------------------------trials------------------------*/
+
+
+
 
 
 

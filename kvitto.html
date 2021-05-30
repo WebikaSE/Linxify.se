@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="stylesheet.css">
   <script src="https://kit.fontawesome.com/b570126731.js" crossorigin="anonymous"></script>
-  <title>Kvittotjänst</title>
+  <title>kvitto</title>
 </head>
 
 <body>
@@ -26,8 +26,15 @@
           </div>
           <ul>
             <li><a href="index.html">Hem</a></li>
-            <li><a href="Tjänster.html">Tjänster</a></li>
-            <li><a href="Vår App.html">Vår App</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-btn">Tjänster</a>
+              <div class="dropdown-menu">
+                <a href="#">Köpar&Säljarskydd</a>
+                <a href="#">Frakttjänster</a>
+                <a href="kvitto.html">Kvittotjänst</a>
+                <a href="#">Delbetalning</a>
+              </div>
+              </li>
+            <li><a href="OurApp.html">Vår App</a></li>
             <li><a href="about.html">Om Oss</a></li>
             <li><a href="Kontakt">Kontakta Oss</a></li>
           </ul>
@@ -40,81 +47,103 @@
   <section id="hero">
     <div class="hero container">
       <div>
-        <h2>Handla <span>tryggt,</span> <span>enkelt</span> och <span>säkert</span> <br> mellan privatpersoner</h2>
+        <h2>Har du upplevt att du saknar kvitto på det du köpt begagnat?</h2>
       </div>
     </div>
   </section>
   <!------------- End Hero Section  -->
 
 <!--------------------------------------------------------------------- Projects Section -->
-  
-<section id="projects">
-    <div class="projects container">
-      <div class="projects-header">
+<section id="main">
+  <div class="main container">
+    <div class="main-header">
         
-      </div>
-      <div class="all-projects">
-  
-        
-        <div class="project-item"><!----item-1-->
-          <div class="project-info" style="flex-basis: 50%; padding: 0;">
-            <img src="./images/kvittp.PNG" alt="img">
-          </div>
-          <div class="project-img" style="flex-basis: 50%;">
-            <img src="./images/bild3.PNG" alt="img">
-          </div>
-        </div>....<!-----end of item-1-->
-  
-  
-        
-        <div class="project-item"><!----item-2----->
-          
-                
-          <div class="project-info" style="flex-basis: 100%;">
-             <h1>Har du upplevt att du saknar kvitto på det du köpt begagnat?</h1>
-            
-            <p>Det har vi och många med oss märker vi. <br>
-
-                Samtidigt vill de flesta slippa papper, få kvittot enkelt vid behov och ha det lagrat.   Så föddes idén till vår kvittotjänst.
-            </p>
-            
-          </div>
-        </div><!---------------end of item-2------>
-  <br>
-
-
-
-  <div class="project-item"><!----item-3----->
-          
-                
-    <div class="project-info" style="flex-basis: 100%;">
-       <h1>Slipp papper, få smidigt underlag
-    </h1>
-      
-      <p>En stor anledning till att många företag inte köper begagnade varor av privatpersoner är att de  inte på ett enkelt sätt kan få underlag till bokföring. <br> <br>
-
-        Med Linxify kan du som företagare enkelt få elektroniskt kvitto på vad du köpt och du vet att  säljaren har identifierat sig med BankID i vår tjänst. <br> <br>
-        
-        Som privatperson kan ditt försäkringsbolag kräva kvitto på vad du äger vid tex brand, stöld eller annan skada och det kan du enkelt få i vår app.  <br> <br>
-        
-        Det kan också vara värdefullt att ha en tydlig överblick och underlag på vad du köpt eller sålt för att ha koll eller om behov skulle uppstå, kunna visa att varan du köpt är din.  Du vet också att både säljare och köpare har identifierat sig med BankID. <br>
-      </p>
-      
+     <h2 class="section-title">saknar kvitto <span>på det du köpt begagnat?</span></h2>
+     <p style="font-size: 20px;">Det har vi och många med oss märker vi. 
+     
+        Samtidigt vill de flesta slippa papper, få kvittot enkelt vid behov och ha det lagrat.   Så föddes idén till vår kvittotjänst.</p>
+       
     </div>
-  </div><!---------------end of item-2------>
+    <div class="all-main">
+
+      
+      <div class="main-item"><!----item-1-->
+        <div class="main-info">
+          <h1>Slipp papper, få smidigt underlag</h1>
+          <h2></h2>
+          <p>En stor anledning till att många företag inte köper begagnade varor av privatpersoner är att de  inte på ett enkelt sätt kan få underlag till bokföring. 
+
+            Med Linxify kan du som företagare enkelt få elektroniskt kvitto på vad du köpt och du vet att  säljaren har identifierat sig med BankID i vår tjänst.</p>
+            
+        </div>
+        <div class="main-img">
+          <img src="./images/kvittp.PNG" alt="img">
+        </div>
+      </div>....<!-----end of item-1-->
 <br>
-        
+
+      
+      <div class="main-item"><!----item-2----->
+        <div class="main-img">
+          <img src="./images/bild3.PNG" alt="img">
+        </div>
+              
+        <div class="main-info">
+           
+          
+          <p>Som privatperson kan ditt försäkringsbolag kräva kvitto på vad du äger vid tex brand, stöld eller annan skada och det kan du enkelt få i vår app.  
+
+            Det kan också vara värdefullt att ha en tydlig överblick och underlag på vad du köpt eller sålt för att ha koll eller om behov skulle uppstå, kunna visa att varan du köpt är din.  Du vet också att både säljare och köpare har identifierat sig med BankID.  
+            
+          </p>
+          
+        </div>
+      </div><!---------------end of item-2------>
+<br>
+
+
+      
+    </div>
+  </div>
+</section>
+<br>
+
+<!-------------------------------------------------------------- End Projects Section -->
+
+ <!--------------------------------------------------------- Contact Section ------------->
+ <section id="contact">
+  <div class="contact container">
+    <div>
+      <h2 class="section-title">Kontakt<span> Oss</span></h2>
+    </div>
+    <div class="contact-items">
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/phone.png" /></div>
+        <div class="contact-info">
+          <h1>Telefon</h1>
+          <h2>+76 123 4567</h2>
+          <h2>+76 123 4567</h2>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/new-post.png" /></div>
+        <div class="contact-info">
+          <h1>E-mail</h1>
+          <h2>info@gmail.com</h2>
+          <h2>kundservice@linxify.se</h2>
+        </div>
+      </div>
+      <div class="contact-item">
+        <div class="icon"><img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" /></div>
+        <div class="contact-info">
+          <h1>Adress</h1>
+          <h2>Hetch, Järnvägsgatan 7, 252 24 Helsingborg</h2>
+        </div>
       </div>
     </div>
-  </section>
-  <br>
-  
-  <!-------------------------------------------------------------- End Projects Section -->
-  
-
-
-
- 
+  </div>
+</section>
+<!------------------------------------------------------------ End Contact Section --->
 
 
   <!-- Footer -->
