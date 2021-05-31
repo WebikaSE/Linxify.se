@@ -418,6 +418,10 @@ li .dropdown{
 .download-apple:hover {
 	background-color: #cca524;
 }
+#download .apps .section-title{
+	color: rgb(59, 165, 179);
+	font-weight: bolder;
+}
 
 /*--------------------------------contact--------------------*/
 
@@ -1097,6 +1101,36 @@ li .dropdown{
 }
 /*------------------------------------------------end buyer and seller protect------*/
 
+#hero {
+	background-image: url(./images/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+}
+
+#hero .hero {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+#hero h2 {
+	display: block;
+	width: fit-content;
+	font-size: 3rem;
+	position: relative;
+	color: white;
+	line-height: 2;
+}
+#main .main-info .bank-text{
+	font-size: 20px;
+}
+
+#main .main-info span{
+	color: rgb(106, 197, 224);
+	font-size: 20px;
+	font-weight: bold;
+}
+/*------ end styling del-betal page----*/
 
 
 
