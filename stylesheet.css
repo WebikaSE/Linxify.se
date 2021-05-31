@@ -1131,25 +1131,38 @@ li .dropdown{
 	font-weight: bold;
 }
 /*------ end styling del-betal page----*/
+/*---------------------------------------------------------shipping page-------*/
+#hero {
+	background-image: url(./images/bg.jpg);
+	background-size: cover;
+	background-position: top center;
+}
 
+#hero .hero-shipping {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 50px;
+	justify-content: flex-start;
+}
+.hero-shipping h2 {
+	display: block;
+	width: fit-content;
+	font-size: 3rem;
+	position: relative;
+	color: white;
+	line-height: 2;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.hero-shipping p {
+	display: block;
+	width: fit-content;
+	font-size: 2rem;
+	position: relative;
+	color: white;
+	line-height: 1.5;
+	font-weight: bold;
+}
+/*-------------------------------------------end shipping-page------------------*/
 
 
 
