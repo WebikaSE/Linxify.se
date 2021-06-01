@@ -337,12 +337,7 @@ li .dropdown{
 	height: 100%;
 	width: 100%;
 }
-#main .main-img img {
-	transition: 0.5s ease transform;
-}
-#main .main-item:hover .main-img img {
-	transform: scale(1.5);
-}
+
 /*------------------------- End main section-------------- */
 
 /*-----------------Download apps------------------*/
@@ -611,12 +606,6 @@ li .dropdown{
 	top: 0;
 	height: 100%;
 	width: 100%;
-}
-#ourapp .ourapp-img img {
-	transition: 0.5s ease transform;
-}
-#ourapp .ourapp-item:hover .ourapp-img img {
-	transform: scale(1.5);
 }
 #ourapp .ourapp-info h1{
     font-size: 35px;
@@ -979,12 +968,6 @@ li .dropdown{
 	height: 100%;
 	width: 100%;
 }
-#main .main-img img {
-	transition: 0.5s ease transform;
-}
-#main .main-item:hover .main-img img {
-	transform: scale(1.5);
-}
 /*---- End kvitto page-------------- */
 
 /*-------------------------------------------------------buyer and seller page----------*/
@@ -1094,12 +1077,7 @@ li .dropdown{
 	height: 100%;
 	width: 100%;
 }
-#main .main-img img {
-	transition: 0.5s ease transform;
-}
-#main .main-item:hover .main-img img {
-	transform: scale(1.5);
-}
+
 /*------------------------------------------------end buyer and seller protect------*/
 
 #hero {
