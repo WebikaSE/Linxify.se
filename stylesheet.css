@@ -100,7 +100,7 @@ p {
 }
 #header .nav-list ul a {
 	font-size: 2.5rem;
-	font-weight: 500;
+	font-weight: 900;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
 	color: white;
@@ -125,7 +125,8 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: crimson;
+	color: black;
+	
 }
 #header .hamburger {
 	height: 60px;
@@ -198,25 +199,24 @@ p {
 .dropdown-btn{
 	display: inline-block;
 	text-align: center;
-	padding: 18px 22px;
+	padding: 18px 22px;/*----------------???------------*/
 	text-decoration: none;
 }
 
 .dropdown:hover .dropdown-btn{
 	background-color: transparent;
+
 	
 }
 li .dropdown{
 	display: inline-block;
-}
+	}
 
 .dropdown-menu{
 	display: none;
 	position: absolute;
-	background-color: black;
 	min-width: 160px;
-	
-
+	background: transparent;
 }
 .dropdown-menu a{
 	
@@ -227,7 +227,7 @@ li .dropdown{
 }
 .dropdown-menu a:hover{
 	background-color: white;
-	color: #cca524;/*--------needs correction----*/
+	
 }
 .dropdown:hover .dropdown-menu{
 	display: block;
@@ -267,7 +267,7 @@ li .dropdown{
 
 /*-------------------------------------------main content------------------ */
 #main{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: white;
 }
 
 
@@ -304,8 +304,8 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	
+	color: black;
 }
 #main .main-info h1 {
 	font-size: 4rem;
@@ -314,13 +314,13 @@ li .dropdown{
 }
 
 #main .main-info p {
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-align: justify;
 }
 #main .main-info .btn{
 	
-	background-color:  #cca524;
+	background-color:  #dbaa3c;
 	margin-top: 30px;	 
 }
 #main .main-img {
@@ -409,10 +409,10 @@ li .dropdown{
 }
 
 .download-google-play:hover {
-	background-color: #cca524;
+	background-color: #dbaa3c;
 }
 .download-apple:hover {
-	background-color: #cca524;
+	background-color: #dbaa3c;
 }
 #download .apps .section-title{
 	color: rgb(59, 165, 179);
@@ -472,7 +472,7 @@ li .dropdown{
 
 /* Footer */
 #footer {
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background:white;
 }
 #footer .footer {
 	min-height: 200px;
@@ -502,7 +502,7 @@ li .dropdown{
 
 }
 #footer p {
-	color: white;
+	color: black;
 	font-size: 1.3rem;
 }
 #footer h1{
@@ -545,7 +545,7 @@ li .dropdown{
 	color: black;
 }
 #ourapp{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: white;
 }
 #ourapp .ourapp {
 	flex-direction: column;
@@ -580,7 +580,7 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: white;
 }
 #ourapp .ourapp-info h1 {
@@ -737,7 +737,7 @@ li .dropdown{
 #team .team-top h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	color: #cca524
+	color: #dbaa3c
 }
 #team .team-bottom {
 	display: flex;
@@ -809,7 +809,7 @@ li .dropdown{
 	line-height: 1;
 }
 #trio .trio-info span{
-	color: #cca524;
+	color: #dbaa3c;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
 	font-weight: bold;
@@ -900,7 +900,7 @@ li .dropdown{
 
 /*--main content--- */
 #main{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: white;
 }
 #main .main {
 	flex-direction: column;
@@ -935,8 +935,8 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	
+	color: black;
 }
 #main .main-info h1 {
 	font-size: 4rem;
@@ -945,7 +945,7 @@ li .dropdown{
 }
 
 #main .main-info p {
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-align: justify;
 }
@@ -995,7 +995,7 @@ li .dropdown{
 }
 
 #main{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: white;
 }
 #main .main {
 	flex-direction: column;
@@ -1044,8 +1044,8 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	background: white;
+	color: black;
 }
 #main .main-info h1 {
 	font-size: 4rem;
@@ -1054,7 +1054,7 @@ li .dropdown{
 }
 
 #main .main-info p {
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-align: justify;
 }
