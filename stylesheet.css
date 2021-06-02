@@ -218,7 +218,6 @@ li .dropdown{
 	background: transparent;
 }
 .dropdown-menu a{
-	
 	padding: 12px 12px;
 	text-decoration: none;
 	display: block;
@@ -260,7 +259,6 @@ li .dropdown{
 	color: black;
 }
 
-
 /*--- End Hero Section */
 
 
@@ -268,8 +266,6 @@ li .dropdown{
 #main{
 	background: white;
 }
-
-
 #main .main {
 	flex-direction: column;
 	max-width: 1200px; 
@@ -296,15 +292,15 @@ li .dropdown{
 	border-radius: 10px;
 }
 #main .main-info {
-	padding: 30px;
+	padding: 10px;
 	flex-basis: 60%;
 	height: 100%;
 	display: flex;
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	
 	color: black;
+	background-color: rgb(248, 248, 246);
 }
 #main .main-info h1 {
 	font-size: 4rem;
@@ -934,7 +930,7 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	
+	background-color: rgb(250, 249, 247);
 	color: black;
 }
 #main .main-info h1 {
@@ -1043,7 +1039,7 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background: white;
+	background-color: rgb(252, 251, 248);;
 	color: black;
 }
 #main .main-info h1 {
