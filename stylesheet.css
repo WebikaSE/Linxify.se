@@ -82,7 +82,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30); /*imp*/
+	background-color: rgb(31, 30, 30);
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -205,12 +205,11 @@ p {
 
 .dropdown:hover .dropdown-btn{
 	background-color: transparent;
-
-	
 }
+
 li .dropdown{
 	display: inline-block;
-	}
+}
 
 .dropdown-menu{
 	display: none;
@@ -951,7 +950,7 @@ li .dropdown{
 }
 #main .main-info .btn{
 	
-	background-color:  #cca524;
+	background-color:  #dbaa3c;
 	margin-top: 30px;	 
 }
 #main .main-img {
@@ -1018,7 +1017,7 @@ li .dropdown{
 #main .main-header-shop span {
 	margin: 3rem;
 	font-size:18px;
-	color: #cca524;
+	color: #dbaa3c;
 }
 #main .all-main {
 	display: flex;
@@ -1060,7 +1059,7 @@ li .dropdown{
 }
 #main .main-info .btn{
 	
-	background-color:  #cca524;
+	background-color:  #dbaa3c;
 	margin-top: 30px;	 
 }
 #main .main-img {
