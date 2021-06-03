@@ -67,8 +67,7 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: rgba(31, 30, 30, 0.24);
-	transition: 0.3s ease background-color;
+	background-color: white;
 }
 #header .nav-bar {
 	display: flex;
@@ -82,7 +81,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	background-color: rgb(31, 30, 30);
+	
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -103,7 +102,7 @@ p {
 	font-weight: 900;
 	letter-spacing: 0.2rem;
 	text-decoration: none;
-	color: white;
+	color: black;
 	text-transform: uppercase;
 	padding: 20px;
 	display: block;
@@ -126,7 +125,6 @@ p {
 }
 #header .nav-list ul li:hover a {
 	color: black;
-	
 }
 #header .hamburger {
 	height: 60px;
@@ -199,15 +197,13 @@ p {
 .dropdown-btn{
 	display: inline-block;
 	text-align: center;
-	padding: 18px 22px;/*----------------???------------*/
+	padding: 18px 22px;
 	text-decoration: none;
 }
 
-.dropdown:hover .dropdown-btn{
-	background-color: transparent;
-}
 
-li .dropdown{
+
+.dropdown li{
 	display: inline-block;
 }
 
@@ -215,7 +211,7 @@ li .dropdown{
 	display: none;
 	position: absolute;
 	min-width: 160px;
-	background: transparent;
+	background: white;
 }
 .dropdown-menu a{
 	padding: 12px 12px;
@@ -224,7 +220,7 @@ li .dropdown{
 	text-align: left;	
 }
 .dropdown-menu a:hover{
-	background-color: white;
+	background-color: rgb(247, 242, 242);
 	
 }
 .dropdown:hover .dropdown-menu{
@@ -246,7 +242,7 @@ li .dropdown{
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h2 {
+#hero h1 {
 	display: block;
 	width: fit-content;
 	font-size: 3rem;
@@ -257,6 +253,7 @@ li .dropdown{
 #hero span{
 	font-size: 4rem;
 	color: black;
+	background-color: #dbaa3c;
 }
 
 /*--- End Hero Section */
@@ -311,6 +308,7 @@ li .dropdown{
 #main .main-info p {
 	color: black;
 	font-size: 16px;
+	font-weight: 500;
 	text-align: justify;
 }
 #main .main-info .btn{
@@ -341,6 +339,7 @@ li .dropdown{
 	margin: 0 auto;
 	padding: 10px 10px;
 	width: 90%;
+	background-color: rgb(248, 248, 246);
 }
 #download .download-apps ul{
 	width: 100%;
@@ -355,7 +354,6 @@ li .dropdown{
 	height: 75px;
 	background: #000;
 	float: left;
-	
 	color: #fff;
 	cursor: pointer;
 	border: 2px solid #fff;
@@ -410,7 +408,7 @@ li .dropdown{
 	background-color: #dbaa3c;
 }
 #download .apps .section-title{
-	color: rgb(59, 165, 179);
+	color: black;
 	font-weight: bolder;
 }
 
@@ -418,7 +416,7 @@ li .dropdown{
 
 
 #contact{
-	background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+	background: white;
 }
 
 
@@ -467,7 +465,7 @@ li .dropdown{
 
 /* Footer */
 #footer {
-	background:white;
+	background:rgb(248, 248, 246);
 }
 #footer .footer {
 	min-height: 200px;
@@ -575,8 +573,8 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	background: rgb(248, 248, 246);
+	color: black;
 }
 #ourapp .ourapp-info h1 {
 	font-size: 4rem;
@@ -584,7 +582,7 @@ li .dropdown{
 	margin-bottom: 16px;
 }
 #ourapp .ourapp-info p {
-	color: white;
+	
 	font-size: 16px;
 	text-align: justify;
 }
@@ -606,16 +604,17 @@ li .dropdown{
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
+} 
+#ourapp .ourapp-info h3{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }   
 #ourapp .ourapp-info li{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     line-height: 2;
-}
-#ourapp .ourapp-info span{
-    color: #d69b6a;
-    font-weight: bold;
 }
 #ourapp .ourapp-info h2 {
 	color: white;
@@ -627,12 +626,12 @@ li .dropdown{
 	left: 0;
 	width: 0;
 	height: 100%;
-	color: #f18e67;
+	color: black;
 	overflow: hidden;
 	position: absolute;
 	content: attr(data-text);
-	border-right: 2px solid #37b9f1;	
-	animation: animate 6s linear infinite;
+	border-right: 2px solid white;	
+	animation: animate 4s linear infinite;
 }
 
 @keyframes animate {
@@ -652,7 +651,7 @@ li .dropdown{
 
 /*-----style-about-us-page----------*/
 #hero-aboutus {
-	background-image: url(./images/aboutbg.jpg);
+	background-image: url(./images/menupic.jpg);
 	background-size: cover;
 	background-position: top center;
 }
@@ -667,13 +666,13 @@ li .dropdown{
 	width: fit-content;
 	font-size: 5rem;
 	position: relative;
-	color: rgb(125, 193, 202);
+	color: white;
 	line-height: 2;
 	font-weight: 700;
 }
 #hero-aboutus p{
 	font-size: 2.4rem;
-	color: rgb(77, 78, 145);
+	color: black;
 	font-weight: 600;
 	line-height: 2;
 	font-family: 'Montserrat', sans-serif;
@@ -681,7 +680,7 @@ li .dropdown{
 #about .about {
 	flex-direction: column;
 	text-align: center;
-	max-width: 1200px;
+	max-width: 1400px;
 	margin: 0 auto;
 	padding: 100px 20px;
 }
@@ -691,19 +690,19 @@ li .dropdown{
 }
 #about .col-right {
 	width: 100%;
-	background-color: grey;
+	background-color: rgb(248, 248, 246);
 	border-radius: 10px;
 }
 #about .col-right p {
 	margin-bottom: 20px;
-	color: white;
+	color: black;
 	font-size: 16px;
 	text-align: justify;
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 500;
+	font-weight: 600;
 }
 #about .col-right span {
-	color: crimson;
+	color: black;
 	font-weight: 400;
 }
 #about .col-left .about-img {
@@ -712,7 +711,7 @@ li .dropdown{
 	position: relative;
 }/*--about team and trio--*/
 #team .team {
-	background-color: rgb(216, 245, 250);
+	background-color: rgb(248, 248, 246);
 	flex-direction: column;
 	text-align: center;
 	max-width: 1500px;
@@ -732,7 +731,7 @@ li .dropdown{
 #team .team-top h1{
 	font-family: 'Montserrat', sans-serif;
 	font-weight: bold;
-	color: #dbaa3c
+	color: black;
 }
 #team .team-bottom {
 	display: flex;
@@ -785,29 +784,29 @@ li .dropdown{
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
-	color: white;
+	background: rgb(248, 248, 246);
+	color: black;
 	border-radius: 20px;
 }
 #trio .trio-info li {
-	color: white;
+	color: black;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 1.5;
 }
 #trio .trio-info p{
-	color: white;
+	color: black;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	font-weight: 300;
+	font-weight: 500;
 	line-height: 1;
 }
 #trio .trio-info span{
-	color: #dbaa3c;
+	color: black;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 18px;
-	font-weight: bold;
+	font-weight: bolder;
 	line-height: 1.9;
 }
 /*---media query for aboutus-page----*/
@@ -1000,20 +999,20 @@ li .dropdown{
 }
 
 #main .main-header-shop{
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background: rgb(248, 248, 246);
 	border-radius: 10px;
 	
 }
 #main .main-header-shop h2 {
 	margin: 5rem;
 	font-size: 20px;
-	color: white;
+	color: black;
 }
 
 #main .main-header-shop span {
-	margin: 3rem;
+	
 	font-size:18px;
-	color: #dbaa3c;
+	color: black;
 }
 #main .all-main {
 	display: flex;
@@ -1130,11 +1129,11 @@ li .dropdown{
 .hero-shipping p {
 	display: block;
 	width: fit-content;
-	font-size: 2rem;
+	font-size: 3rem;
 	position: relative;
 	color: white;
 	line-height: 1.5;
-	font-weight: bold;
+	font-weight: bolder;
 }
 /*-------------------------------------------end shipping-page------------------*/
 
@@ -1264,7 +1263,7 @@ li .dropdown{
 		display: block;
 		height: auto;
 		width: fit-content;
-		background-color: transparent;
+		
 	}
 	#header .nav-list ul li {
 		display: inline-block;
