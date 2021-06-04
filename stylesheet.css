@@ -67,7 +67,9 @@ p {
 }
 #header .header {
 	min-height: 8vh;
-	background-color: white;
+	background-color: white;      /*---------------header bg*/
+	transition: 0.3s ease background-color;
+
 }
 #header .nav-bar {
 	display: flex;
@@ -81,7 +83,7 @@ p {
 #header .nav-list ul {
 	list-style: none;
 	position: absolute;
-	
+	background-color: white;
 	width: 100vw;
 	height: 100vh;
 	left: 100%;
@@ -124,7 +126,7 @@ p {
 	letter-spacing: initial;
 }
 #header .nav-list ul li:hover a {
-	color: black;
+	color: crimson;
 }
 #header .hamburger {
 	height: 60px;
@@ -147,14 +149,14 @@ p {
 	height: 100%;
 	width: 100%;
 	border-radius: 50%;
-	border: 3px solid white;
+	border: 3px solid black;
 	animation: hamburger_puls 1s ease infinite;
 }
 #header .hamburger .bar {
 	height: 2px;
 	width: 30px;
 	position: relative;
-	background-color: white;
+	background-color: black;
 	z-index: -1;
 }
 #header .hamburger .bar::after,
@@ -164,7 +166,7 @@ p {
 	height: 100%;
 	width: 100%;
 	left: 0;
-	background-color: white;
+	background-color: black;
 	transition: 0.3s ease;
 	transition-property: top, bottom;
 }
@@ -200,13 +202,9 @@ p {
 	padding: 18px 22px;
 	text-decoration: none;
 }
-
-
-
 .dropdown li{
 	display: inline-block;
 }
-
 .dropdown-menu{
 	display: none;
 	position: absolute;
@@ -235,7 +233,6 @@ p {
 	background-size: cover;
 	background-position: top center;
 }
-
 #hero .hero {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -255,10 +252,7 @@ p {
 	color: black;
 	background-color: #dbaa3c;
 }
-
 /*--- End Hero Section */
-
-
 /*-------------------------------------------main content------------------ */
 #main{
 	background: white;
@@ -312,8 +306,7 @@ p {
 	text-align: justify;
 }
 #main .main-info .btn{
-	
-	background-color:  #dbaa3c;
+	background-color: #f98939;
 	margin-top: 30px;	 
 }
 #main .main-img {
@@ -333,84 +326,6 @@ p {
 
 /*------------------------- End main section-------------- */
 
-/*-----------------Download apps------------------*/
-#download{
-	max-width: 1200px; 
-	margin: 0 auto;
-	padding: 10px 10px;
-	width: 90%;
-	background-color: rgb(248, 248, 246);
-}
-#download .download-apps ul{
-	width: 100%;
-	text-align: center;	
-}
-#download .download-apps li{
-	display: inline-block;
-	margin: 50px;
-}
-.download-apple{
-	width: 180px;
-	height: 75px;
-	background: #000;
-	float: left;
-	color: #fff;
-	cursor: pointer;
-	border: 2px solid #fff;
-	position: relative;
-	border-radius: 20px;
-}
-.download .fa{
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 15%;
-	transform: translate(-50%, -50%);
-}
-.p1, .p2{
-	position: absolute;
-}
-.p1{
-	top: 35px;
-	font-size: 10px;
-	left: 50px;
-
-}
-.p2{
-	top: 50px;
-	font-size: 15px;
-	left: 47px;
-}
-.download-google-play{
-	width: 180px;
-	height: 75px;
-	background: #000;
-	float: left;
-	
-	color: #fff;
-	cursor: pointer;
-	border: 2px solid #fff;
-	position: relative;
-	border-radius: 20px;
-}
-.download .download-google-play i{
-	color: #fff;
-	position: absolute;
-	top: 50%;
-	left: 15%;
-	transform: translate(-50%, -50%);
-}
-
-.download-google-play:hover {
-	background-color: #dbaa3c;
-}
-.download-apple:hover {
-	background-color: #dbaa3c;
-}
-#download .apps .section-title{
-	color: black;
-	font-weight: bolder;
-}
 
 /*--------------------------------contact--------------------*/
 
@@ -573,7 +488,7 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background: rgb(248, 248, 246);
+	background: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	color: black;
 }
 #ourapp .ourapp-info h1 {
@@ -582,7 +497,7 @@ p {
 	margin-bottom: 16px;
 }
 #ourapp .ourapp-info p {
-	
+	color: white;
 	font-size: 16px;
 	text-align: justify;
 }
@@ -604,17 +519,16 @@ p {
     font-size: 35px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-} 
-#ourapp .ourapp-info h3{
-    font-size: 20px;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
 }   
 #ourapp .ourapp-info li{
     font-size: 16px;
     font-weight: 400;
     font-family: 'Montserrat', sans-serif;
     line-height: 2;
+}
+#ourapp .ourapp-info span{
+    color: #d69b6a;
+    font-weight: bold;
 }
 #ourapp .ourapp-info h2 {
 	color: white;
@@ -626,12 +540,12 @@ p {
 	left: 0;
 	width: 0;
 	height: 100%;
-	color: black;
+	color: #f18e67;
 	overflow: hidden;
 	position: absolute;
 	content: attr(data-text);
-	border-right: 2px solid white;	
-	animation: animate 4s linear infinite;
+	border-right: 2px solid #37b9f1;	
+	animation: animate 6s linear infinite;
 }
 
 @keyframes animate {
@@ -945,7 +859,7 @@ p {
 }
 #main .main-info .btn{
 	
-	background-color:  #dbaa3c;
+	background-color:  #f98939;
 	margin-top: 30px;	 
 }
 #main .main-img {
@@ -999,20 +913,20 @@ p {
 }
 
 #main .main-header-shop{
-	background: rgb(248, 248, 246);
+	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
 	border-radius: 10px;
 	
 }
 #main .main-header-shop h2 {
 	margin: 5rem;
 	font-size: 20px;
-	color: black;
+	color: white;
 }
 
 #main .main-header-shop span {
-	
+	margin: 3rem;
 	font-size:18px;
-	color: black;
+	color: #dbaa3c;
 }
 #main .all-main {
 	display: flex;
@@ -1054,7 +968,7 @@ p {
 }
 #main .main-info .btn{
 	
-	background-color:  #dbaa3c;
+	background-color:  #f98939;
 	margin-top: 30px;	 
 }
 #main .main-img {
@@ -1129,11 +1043,11 @@ p {
 .hero-shipping p {
 	display: block;
 	width: fit-content;
-	font-size: 3rem;
+	font-size: 2rem;
 	position: relative;
 	color: white;
 	line-height: 1.5;
-	font-weight: bolder;
+	font-weight: bold;
 }
 /*-------------------------------------------end shipping-page------------------*/
 
@@ -1283,26 +1197,6 @@ p {
 	}
 }
 /* End  Media Query For Desktop */
-
-/*media query for ourapp--*/
-#ourapp .ourapp-item {
-		flex-direction: row;
-	}
-	#ourapp .ourapp-item:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#ourapp .ourapp-item {
-		height: 400px;
-		margin: 0;
-		width: 100%;
-		border-radius: 0;
-	}
-	#ourapp .all-ourapp .ourapp-info {
-		height: 100%;
-	}
-	#ourapp .all-ourapp .ourapp-img {
-		height: 100%;
-	}
 
 
 
