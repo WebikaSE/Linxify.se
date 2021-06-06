@@ -329,12 +329,9 @@ p {
 
 /*--------------------------------contact--------------------*/
 
-
 #contact{
 	background: white;
 }
-
-
 #contact .contact {
 	flex-direction: column;
 	max-width: 1200px;
@@ -355,27 +352,21 @@ p {
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
-	box-shadow: 0px 0px 18px 0 #0000002c;
-	transition: 0.3s ease box-shadow;
 }
-#contact .contact-item:hover {
-	box-shadow: 0px 0px 5px 0 #0000002c;
+#contact .contact-item .btn{
+	background-color:  #f98939;
+	font-size: 20px;
 }
-#contact .icon {
-	width: 70px;
-	margin: 0 auto;
-	margin-bottom: 10px;
+#contact .contact h3{
+	font-size: 4rem;
+	font-weight: 600;
+	text-align: center;
+	margin-top: 30px;
 }
-#contact .contact-info h1 {
-	font-size: 2.5rem;
-	font-weight: 500;
-	margin-bottom: 5px;
-}
-#contact .contact-info h2 {
-	font-size: 1.3rem;
-	line-height: 2rem;
-	font-weight: 500;
-}
+
+
+
+
 
 
 /* Footer */
