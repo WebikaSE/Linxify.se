@@ -749,8 +749,6 @@ p {
 	font-size: 16px;
 	color:black;
 }
-
-
 #main .all-main {
 	display: flex;
 	align-items: center;
@@ -835,11 +833,11 @@ p {
 }
 
 #main .main-info span{
-	color: rgb(106, 197, 224);
+	
 	font-size: 20px;
 	font-weight: bold;
 }
-/*------ end styling del-betal page----*/
+/*------ end styling del-betal (payment) page----*/
 /*---------------------------------------------------------shipping page-------*/
 #hero {
 	background-image: url(./images/bg.jpg);
