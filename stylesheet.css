@@ -607,14 +607,7 @@ p {
 }
 /* -----------------------------------------------------------End-about us----------------*/
 
-
-
-
-
-
-
-
-/*--------------------------------------------styling kvittotjänst page--*/
+/*----------------------------------kvittotjänst(receipt) page--*/
 
 /* Hero Section */
 #hero {
@@ -710,7 +703,9 @@ p {
 }
 /*---- End kvitto page-------------- */
 
-/*-------------------------------------------------------buyer and seller page----------*/
+
+
+/*-----------------------------------------buyer and seller page (secure)-----*/
 
 
 #hero {
@@ -745,21 +740,17 @@ p {
 }
 
 #main .main-header-shop{
-	background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+	background-color: rgb(252, 251, 248);
 	border-radius: 10px;
 	
 }
 #main .main-header-shop h2 {
 	margin: 5rem;
-	font-size: 20px;
-	color: white;
+	font-size: 16px;
+	color:black;
 }
 
-#main .main-header-shop span {
-	margin: 3rem;
-	font-size:18px;
-	color: #dbaa3c;
-}
+
 #main .all-main {
 	display: flex;
 	align-items: center;
@@ -784,7 +775,7 @@ p {
 	align-items: flex-start;
 	justify-content: center;
 	flex-direction: column;
-	background-color: rgb(252, 251, 248);;
+	background-color: rgb(252, 251, 248);
 	color: black;
 }
 #main .main-info h1 {
@@ -817,8 +808,7 @@ p {
 	height: 100%;
 	width: 100%;
 }
-
-/*------------------------------------------------end buyer and seller protect------*/
+/*------------------------------------------------end buyer and seller (secure)------*/
 
 #hero {
 	background-image: url(./images/bg.jpg);
