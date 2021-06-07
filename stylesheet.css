@@ -851,7 +851,7 @@ p {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-.hero-shipping h2 {
+#hero .hero-shipping h2 {
 	display: block;
 	width: fit-content;
 	font-size: 3rem;
@@ -860,7 +860,7 @@ p {
 	line-height: 2;
 }
 
-.hero-shipping p {
+.hero-shipping span {
 	display: block;
 	width: fit-content;
 	font-size: 2rem;
