@@ -1,4 +1,6 @@
-@import 'https://fonts.googleapis.com/css?family=Montserrat:300, 400, 700&display=swap';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
 * {
 	padding: 0;
 	margin: 0;
@@ -6,7 +8,7 @@
 }
 html {
 	font-size: 10px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	scroll-behavior: smooth; 
 }
 a {
@@ -125,9 +127,7 @@ p {
 	transform: translate(-50%, -50%) scale(1);
 	letter-spacing: initial;
 }
-#header .nav-list ul li:hover a {
-	color: crimson;
-}
+
 #header .hamburger {
 	height: 60px;
 	width: 60px;
@@ -217,7 +217,7 @@ p {
 	text-align: left;	
 }
 .dropdown-menu a:hover{
-	background-color: rgb(247, 242, 242);	
+	background-color: rgb(247, 242, 242);
 }
 .dropdown:hover .dropdown-menu{
 	display: block;
@@ -239,15 +239,16 @@ p {
 #hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 3rem;
+	font-size: 4rem;
 	position: relative;
-	color: white;
+	color: black;
 	line-height: 2;
+	font-weight: 800;
 }
 #hero span{
-	font-size: 4rem;
-	color: black;
-	background-color: #dbaa3c;
+	font-size: 5rem;
+	color: white;
+	font-weight: 800;	
 }
 /*--------------------------------------------------------------- End Hero Section */
 /* main content */
@@ -365,7 +366,8 @@ p {
 .footer-container{
 	padding-bottom: 2rem;
 	padding-top: 10rem;
-	background-color: grey;
+	background-color: #69b7d6
+	;
 }
 .footer{
 	width: 100%;
@@ -384,6 +386,10 @@ p {
 }
 .footer-heading h2{
 	margin-bottom: 6px;
+}
+.footer a{
+	text-decoration: none;
+	color: black;
 }
 .footer-container p{
 	text-align: center;
@@ -445,7 +451,7 @@ p {
 	color: black;
 	font-weight: 600;
 	line-height: 2;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 }/*-about recycle container--*/
 #about .about {
 	flex-direction: column;
@@ -466,7 +472,7 @@ p {
 	color: black;
 	font-size: 16px;
 	text-align: justify;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 }
 #about .col-right h1 {
@@ -493,7 +499,7 @@ p {
 }
 #team .team-top p{
 	font-size: 16px;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 }
 #team .team-top h1 {
@@ -534,21 +540,21 @@ p {
 }
 #team .trio-info li {
 	color: black;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
 }
 #team .trio-info p{
 	color: black;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
 }
 #team .trio-info span{
 	color: black;
-	font-family: 'Montserrat', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-weight: bolder;
 	line-height: 1.5;
@@ -631,8 +637,12 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: white;
+	color: black;
 	line-height: 2;
+}
+#hero span{
+	color: white;
+	font-size: 4.2rem;
 }
 
 /*--main content--- */
@@ -729,7 +739,7 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: white;
+	color: black;
 	line-height: 2;
 }
 
@@ -829,7 +839,7 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: white;
+	color: black;
 	line-height: 2;
 }
 #main .main-info .bank-text{
@@ -860,7 +870,7 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: white;
+	color: black;
 	line-height: 2;
 }
 
