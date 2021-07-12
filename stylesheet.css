@@ -55,6 +55,10 @@ p {
 /*--global classes ends--*/
 
 
+
+
+
+
 /*----------------------------------HEADER---------------------------------*/
 .brand img{
 	width: 300px;
@@ -195,6 +199,8 @@ p {
 }
 /* End Keyframes */
 /* dropdown */
+
+
 .dropdown-btn{
 	display: inline-block;
 	text-align: center;
@@ -241,16 +247,12 @@ p {
 	width: fit-content;
 	font-size: 4rem;
 	position: relative;
-	color: black;
+	color: white;
 	line-height: 2;
 	font-weight: 800;
 }
-#hero span{
-	font-size: 5rem;
-	color: white;
-	font-weight: 800;	
-}
-/*--------------------------------------------------------------- End Hero Section */
+
+/*- End Hero Section */
 /* main content */
 #main{
 	background: white;
@@ -320,7 +322,7 @@ p {
 	height: 100%;
 	width: 100%;
 }
-/*------------------------------------------------------------------ End main section---- */
+/*--- End main section---- */
 
 /* contact */
 #contact{
@@ -380,8 +382,8 @@ p {
 .footer-heading{
 	display: flex;
 	flex-direction: column;
-	margin-right: 6rem;
-	margin-left: 6rem;
+	margin-right: 8rem;
+	margin-left: 8rem;
 	text-align: center;
 }
 .footer-heading h2{
@@ -406,9 +408,9 @@ p {
 	}
 }
 
-/* ---------------------------------------------------------------End Footer-- */
+/* --End Footer-- */
 
-/*------------------------End styling index.html--------------------*/
+/*---------------------------------------------End styling index.html--------------------*/
 
 
 
@@ -436,7 +438,7 @@ p {
 #hero-aboutus h2 {
 	display: block;
 	width: fit-content;
-	font-size: 5rem;
+	font-size: 4rem;
 	position: relative;
 	color: white;
 	line-height: 2;
@@ -444,7 +446,7 @@ p {
 }
 #hero-aboutus p{
 	font-size: 2.4rem;
-	color: black;
+	color:white;
 	font-weight: 600;
 	line-height: 2;
 	font-family: 'Open Sans', sans-serif;
@@ -540,6 +542,7 @@ p {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
+	text-align: justify;
 }
 #team .trio-info p{
 	color: black;
@@ -547,6 +550,7 @@ p {
 	font-size: 16px;
 	font-weight: 500;
 	line-height: 1.5;
+	text-align: justify;
 }
 #team .trio-info span{
 	color: black;
@@ -554,6 +558,7 @@ p {
 	font-size: 18px;
 	font-weight: bolder;
 	line-height: 1.5;
+	text-align: justify;
 }
 
 /*---media query for aboutus-page----*/
@@ -611,7 +616,20 @@ p {
 		margin: 1.5%;
 	}
 }
-/* -----------------------------------------------------------End-about us----------------*/
+/* ---------------End-about us----------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*----------------------------------kvittotjänst(receipt) page--*/
 
@@ -633,12 +651,8 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: black;
-	line-height: 2;
-}
-#hero span{
 	color: white;
-	font-size: 4.2rem;
+	line-height: 2;
 }
 
 /*--main content--- */
@@ -686,7 +700,10 @@ p {
 	font-weight: 500;
 	margin-bottom: 16px;
 }
-
+#main .main-info h2{
+	font-size: 16px;
+	text-align: justify;
+}
 #main .main-info p {
 	color: black;
 	font-size: 16px;
@@ -715,6 +732,12 @@ p {
 
 
 
+
+
+
+
+
+
 /*-----------------------------------------buyer and seller page (secure)-----*/
 
 
@@ -730,12 +753,12 @@ p {
 	padding: 0 50px;
 	justify-content: flex-start;
 }
-#hero h2 {
+#hero h1 {
 	display: block;
 	width: fit-content;
-	font-size: 3rem;
+	font-size: 4rem;
 	position: relative;
-	color: black;
+	color: white;
 	line-height: 2;
 }
 
@@ -758,6 +781,8 @@ p {
 	margin: 5rem;
 	font-size: 16px;
 	color:black;
+	
+
 }
 #main .all-main {
 	display: flex;
@@ -816,7 +841,16 @@ p {
 	height: 100%;
 	width: 100%;
 }
-/*------------------------------------------------end buyer and seller (secure)------*/
+/*---end buyer and seller (secure)---*/
+
+
+
+
+
+
+
+
+/*---------------------------------------------------------Delbetalning---*/
 
 #hero {
 	background-image: url(./images/bg.jpg);
@@ -833,9 +867,9 @@ p {
 #hero h2 {
 	display: block;
 	width: fit-content;
-	font-size: 3rem;
+	font-size: 4rem;
 	position: relative;
-	color: black;
+	color: white;
 	line-height: 2;
 }
 #main .main-info .bank-text{
@@ -847,7 +881,18 @@ p {
 	font-size: 20px;
 	font-weight: bold;
 }
-/*------ end styling del-betal (payment) page----*/
+/*----end  delbetalnig (payment) page----*/
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------------------shipping page-------*/
 #hero {
 	background-image: url(./images/bg.jpg);
@@ -866,14 +911,14 @@ p {
 	width: fit-content;
 	font-size: 3rem;
 	position: relative;
-	color: black;
+	color: white;
 	line-height: 2;
 }
 
-.hero-shipping span {
+#hero .hero-shipping span {
 	display: block;
 	width: fit-content;
-	font-size: 2rem;
+	font-size: 4rem;
 	position: relative;
 	color: white;
 	line-height: 1.5;
@@ -906,6 +951,7 @@ p {
 	#hero h2 {
 		font-size: 4rem;
 	}
+	
 	/* End Hero */
 
 	/* Services Section */
@@ -1155,3 +1201,33 @@ textarea{
 	
 }
 /*-----------end contact page-----issue with media query---*/ 
+
+@media only screen and (max-width: 520px){
+	#hero h1{
+		padding-top: 2em;
+		font-size: 3rem;
+	}
+	
+	#hero h2{
+		padding-top: 2em;
+		font-size: 3rem;
+	}
+
+	
+	.brand img{
+		width: 250px;
+	}
+		
+	#main .main-info h1 {
+		
+		font-size: 3.5rem;
+	}
+	#hero-aboutus h2 {
+		
+		padding-top: 2em;
+		
+		
+	}
+}
+
+/*need to fix fraktjanster hero on media queries*/
