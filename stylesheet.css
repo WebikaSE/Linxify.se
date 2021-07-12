@@ -1050,7 +1050,7 @@ p {
 
 /* Media Query For Desktop */
 @media only screen and (min-width: 1200px) {
-	/* header */
+	
 	#header .hamburger { 			/*remove it on desktop*/
 		display: none;
 	}
@@ -1067,10 +1067,11 @@ p {
 	#header .nav-list ul li a {
 		font-size: 1.8rem;
 	}
-    
 	#header .nav-list ul a:after {
 		display: none;
 	}
+	
+}
 	/* End header */
 
 	#services .service-bottom .service-item {
@@ -1225,9 +1226,17 @@ textarea{
 	#hero-aboutus h2 {
 		
 		padding-top: 2em;
-		
-		
 	}
+	#header .nav-list ul a {
+		font-size: 1.8rem;
+	
+	}
+	.dropdown-menu{		
+		right: 0;
+  left: auto;
+  padding-left: 1px;
+  padding-right: 1px;
+		
+	}	
 }
 
-/*need to fix fraktjanster hero on media queries*/
